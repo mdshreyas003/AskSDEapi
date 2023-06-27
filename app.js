@@ -3,7 +3,7 @@ const ProblemSet = require('./ProblemSet.json')
 const app = express()
 const cors = require('cors')
 app.use(cors({
-    origin:"*"
+    origin:"https://asksde-ad8be.web.app/"
 }))
 app.get('/api/problemset/',(req,res)=>{
     res.json(ProblemSet)
